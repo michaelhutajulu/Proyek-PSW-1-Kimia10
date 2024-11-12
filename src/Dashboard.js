@@ -13,7 +13,7 @@ const Dashboard = () => {
       </header>
       <nav className="dashboard-navbar">
         <ul>
-        <li><Link to="/dashboard">Beranda</Link></li>
+        <li><Link to="/dashboard">Berandaa</Link></li>
         <li><Link to="/teori-atom">Teori Atom</Link></li>
           <li><Link to="/tabel-periodik">Tabel Periodik Unsur</Link></li>
           <li><Link to="/stoikiometri">Stoikiometri</Link></li>
