@@ -6,7 +6,6 @@ import Registration from './Registration';
 import Login from './Login';
 import Dashboard from './Dashboard';
 
-// Import Halaman-Halaman dari folder pages
 import TeoriAtom from './pages/TeoriAtom';
 import TabelPeriodik from './pages/TabelPeriodik';
 import Stoikiometri from './pages/Stoikiometri';
@@ -16,7 +15,7 @@ import Kontak from './pages/Kontak';
 import Developer from './pages/Developer';
 
 function App() {
-  const [userData, setUserData] = useState(null); // State untuk menyimpan data user saat registrasi
+  const [userData, setUserData] = useState(null); 
 
   return (
     <Router>
@@ -26,7 +25,6 @@ function App() {
           <Route path="/login" element={<Login userData={userData} />} />
           <Route path="/dashboard" element={<Dashboard />} />
 
-          {/* Tambahkan Routes untuk setiap halaman dari folder pages */}
           <Route path="/teori-atom" element={<TeoriAtom />} />
           <Route path="/tabel-periodik" element={<TabelPeriodik />} />
           <Route path="/stoikiometri" element={<Stoikiometri />} />
