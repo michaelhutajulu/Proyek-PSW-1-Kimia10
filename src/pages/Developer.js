@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../web.css';
+import Navbar from '../components/Navbar';
 
 const Developer = () => {
   return (
@@ -11,17 +10,7 @@ const Developer = () => {
           <h1 className="website-name">Chem10thguide</h1>
         </div>
       </header>
-      <nav className="dashboard-navbar">
-        <ul><li><Link to="/dashboard">Beranda</Link></li>
-        <li><Link to="/teori-atom">Teori Atom</Link></li>
-          <li><Link to="/tabel-periodik">Tabel Periodik Unsur</Link></li>
-          <li><Link to="/stoikiometri">Stoikiometri</Link></li>
-          <li><Link to="/ikatan-kimia">Ikatan Kimia</Link></li>
-          <li><Link to="/reaksi-redoks">Reaksi Redoks</Link></li>
-          <li><Link to="/kontak">Kontak</Link></li>
-          <li><Link to="/developer">Developer</Link></li>
-        </ul>
-      </nav>
+      <Navbar />
     <div className="page-container">
       <h2>Developer</h2>
       <p>Informasi tentang pengembang website ini akan ditampilkan di sini.</p>

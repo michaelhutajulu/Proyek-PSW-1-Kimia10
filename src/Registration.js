@@ -11,11 +11,11 @@ const Registration = ({ setUserData }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setUserData({ name, email, password });
-    navigate('/login'); 
+    navigate('/login');
   };
 
   return (
-    <div>
+    <div className="registration-page">
       <header className="page-header">
         <img src="/logo192.png" alt="Website Logo" className="header-logo" />
         <h1 className="header-title">Chem10thguide</h1>

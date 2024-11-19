@@ -11,9 +11,9 @@ const Login = ({ userData }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (userData && email === userData.email && password === userData.password) {
-      setMessage('Login berhasil....');
+      setMessage('Login berhasil...');
       setTimeout(() => {
-        navigate('/dashboard'); 
+        navigate('/dashboard');
       }, 2000);
     } else {
       setMessage('Email atau Password salah! Silahkan coba lagi.');
@@ -21,12 +21,12 @@ const Login = ({ userData }) => {
   };
 
   return (
-    <div>
+    <div className="login-page">
       <header className="page-header">
         <img src="/logo192.png" alt="Website Logo" className="header-logo" />
         <h1 className="header-title">Chem10thguide</h1>
       </header>
-      
+
       <div className="login-container">
         <div className="login-header">Login</div>
         <form className="login-form" onSubmit={handleSubmit}>
@@ -55,6 +55,11 @@ const Login = ({ userData }) => {
           <button type="submit" className="btn-primary">Login</button>
         </form>
         {message && <div className="alert alert-info mt-3">{message}</div>}
+
+        <div className="register-link">
+          Belum punya akun?{' '}
+          <span onClick={() => navigate('/registration')}>Registrasi disini</span>
+        </div>
       </div>
     </div>
   );
