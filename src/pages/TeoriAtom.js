@@ -29,7 +29,6 @@ const TeoriAtom = () => {
         Sebuah pengertian pasti diawali dengan katanya. Sama halnya dengan atom, kata atom itu sendiri berasal dari bahasa Yunani, atomos. Atomos berarti tidak dapat dibagi-bagi. Sementara itu, pengertian atom-atom menurut para ahli juga berbeda-beda. 
         Berikut pengertian atom menurut para ahli:
       </p>
-    </div>
     <div className="content-section">
       <h2>Teori Atom John Dalton</h2>
       <div className="alert-box">
@@ -121,6 +120,7 @@ const TeoriAtom = () => {
           <div className="model">
             <img src="Mekanika.png" alt="Model Mekanika Kuantum" />
             <p>Mekanika Kuantum</p>
+          </div>
           </div>
           </div>
       </div>
