@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: url('./background.png') no-repeat center center fixed;
-  background-size: cover;
+  background: linear-gradient(135deg, #0D1E4C, #C48CB3, #E5C9D7, #83A6CE, #26415E, #0B1B32);
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite; /* Gradien bergerak */
   font-family: Arial, sans-serif;
   color: #333;
   opacity: 0;
@@ -84,7 +85,6 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   height: 200px;
 }
-
 
 .welcome-text h1 {
   font-size: 1.8rem;
@@ -231,4 +231,10 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }

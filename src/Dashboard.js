@@ -43,7 +43,7 @@ const Dashboard = () => {
           <div className="welcome-text">
             <h1>Selamat Datang di Chem10thguide</h1>
             <p>
-              Kami menyediakan panduan lengkap untuk belajar kimia tingkat SMA
+              Kami menyediakan panduan lengkap untuk belajar kimia Kelas 10 SMA
               dengan materi interaktif dan mudah dipahami.
             </p>
           </div>
