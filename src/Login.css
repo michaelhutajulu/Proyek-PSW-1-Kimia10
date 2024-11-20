@@ -1,5 +1,13 @@
 .login-page {
-    background: linear-gradient(135deg, #28a745 40%, #ffffff 60%);
+    background: linear-gradient(
+        135deg, 
+        #031716 15%, 
+        #032F30 30%, 
+        #0A7075 50%, 
+        #0C969C 65%, 
+        #6BA3BE 85%, 
+        #274D60 100%
+    );
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -100,16 +108,15 @@
     text-align: center;
   }
   
-  .register-link span {
+.register-link span {
     color: #007bff; 
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
     transition: color 0.3s ease, text-decoration 0.3s ease;
-  }
+}
   
-  .register-link span:hover {
+.register-link span:hover {
     color: #0056b3; 
     text-decoration: underline;
-  }
-  
+}

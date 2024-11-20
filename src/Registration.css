@@ -1,5 +1,13 @@
 .registration-page {
-    background: linear-gradient(135deg, #28a745 60%, #ffffff 40%);
+    background: linear-gradient(
+        135deg, 
+        #031716 15%, 
+        #032F30 30%, 
+        #0A7075 50%, 
+        #0C969C 65%, 
+        #6BA3BE 85%, 
+        #274D60 100%
+    );
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,7 +29,6 @@
     animation: fadeIn 0.6s ease-in-out;
 }
 
-/* Animasi masuk */
 @keyframes fadeIn {
     from {
         opacity: 0;
