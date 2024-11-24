@@ -11,14 +11,9 @@ const Stoikiometri = () => {
         </div>
       </header>
       <Navbar />
-    <div className="page-container">
+    <div className="content-section">
       <h2>Stoikiometri</h2>
-      <div className="image-container">
-      <img src="/Stoikiometri.jpg" 
-        alt="Stoikiometri" 
-        style={{  width: '50%', height: 'auto', marginTop: '20px' }}
-        />
-      </div>
+      <img src="/Stoikiometri.jpg" className='image-section'/>
       <p>Penjelasan dan contoh soal stoikiometri akan ditampilkan di sini.</p>
       <h3>Pengertian Stoikiometri</h3>
       <p> Stoikometri, di dalam ilmu kimia ialah ilmu yang mempelajari hubungan kuantitatif antar

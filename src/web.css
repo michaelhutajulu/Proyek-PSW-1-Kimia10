@@ -2,9 +2,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: linear-gradient(135deg, #0D1E4C, #C48CB3, #E5C9D7, #83A6CE, #26415E, #0B1B32);
-  background-size: 400% 400%;
-  animation: gradientBackground 15s ease infinite; /* Gradien bergerak */
+  background-color: #ffffff; /* Mengubah latar belakang menjadi putih */
   font-family: Arial, sans-serif;
   color: #333;
   opacity: 0;
@@ -16,7 +14,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px 20px;
-  background-color: #1e3a8a;
+  background-color: #1e3a8a; /* Warna latar belakang header */
   color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: translateY(-20px); 
@@ -50,6 +48,7 @@
   transform: translateY(20px); 
   animation: fadeInUp 0.6s forwards;
 }
+
 .box h2 {
   font-size: 1.5rem;
   font-weight: bold;
@@ -119,7 +118,7 @@
 .article {
   display: flex;
   flex-direction: row;
-  background-color: #fff;
+  background-color: #fff; /* Latar belakang artikel */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -154,7 +153,7 @@
   animation-delay: 1.6s;
 }
 
-.article-content {
+.article .content {
   flex: 1;
 }
 
