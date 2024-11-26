@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import './reaksiredoks.css';
 
 const ReaksiRedoks = () => {
   return (
@@ -16,17 +15,22 @@ const ReaksiRedoks = () => {
       <h2>Reaksi Redoks</h2>
       <section>
           <h3>Reaksi Redoks</h3>
-          <p>Apa itu reaksi redoks? Reaksi redoks adalah singkatan dari reaksi reduksi dan oksidasi yang berlangsung pada proses elektrokimia. Boleh dibilang, reaksi redoks adalah singkatan dari reaksi reduksi dan oksidasi. Berikut pengertian dari kedua istilah tersebut.</p>
+          <p>Apa itu reaksi redoks? Reaksi redoks adalah singkatan dari reaksi reduksi dan oksidasi yang berlangsung pada proses elektrokimia. Boleh dibilang, reaksi redoks adalah singkatan dari reaksi reduksi dan oksidasi.Reaksi redoks adalah proses kimia yang melibatkan transfer elektron antara dua zat, di mana satu zat mengalami oksidasi dan zat lainnya mengalami reduksi. </p>
+        <p>Dalam reaksi redoks, zat yang mengalami oksidasi disebut reduktor karena memberikan elektron, sedangkan zat yang mengalami reduksi disebut oksidator karena menerima elektron. Contohnya adalah reaksi antara logam seng (Zn) dan ion tembaga (Cu²⁺), di mana Zn teroksidasi menjadi Zn²⁺ dengan melepaskan elektron, dan Cu²⁺ tereduksi menjadi logam Cu dengan menerima elektron. Reaksi redoks memainkan peran penting dalam berbagai proses alami dan teknologi, seperti fotosintesis, respirasi, dan pembangkitan energi dalam baterai.</p>
+        <p>Berikut pengertian dari kedua istilah tersebut.</p>
         </section>
         
         <section>
           <h3>Pengertian Reduksi</h3>
           <p>Reduksi adalah reaksi yang mengalami penurunan bilangan oksidasi dan kenaikan elektron. Dapat dikatakan bahwa reduksi adalah reaksi dimana suatu zat kehilangan oksigen.</p>
+          <p>Reduksi sering kali melibatkan pelepasan oksigen dari suatu zat atau pengikatan hidrogen oleh zat tersebut.   Sebagai contoh, dalam reaksi Fe₂O₃ + 3CO → 2Fe + 3CO₂, besi oksida (Fe₂O₃) mengalami reduksi menjadi besi (Fe) karena kehilangan atom oksigen. Sementara itu, karbon monoksida (CO) bertindak sebagai reduktor, memberikan elektron selama reaksi berlangsung. Proses reduksi ini penting dalam berbagai bidang, seperti metalurgi untuk ekstraksi logam dan biokimia dalam respirasi seluler. </p>
         </section>
         
         <section>
           <h3>Pengertian Oksidasi</h3>
           <p>Oksidasi adalah reaksi yang mengalami peningkatan bilangan oksidasi dan penurunan elektron. Dapat dikatakan bahwa oksidasi adalah reaksi dimana suatu zat mengikat oksigen.</p>
+        <p>  Dalam reaksi ini, bilangan oksidasi (tingkat oksidasi) zat yang terlibat meningkat. Reaksi oksidasi biasanya berpasangan dengan reaksi reduksi, karena elektron yang hilang oleh satu zat harus diterima oleh zat lain.</p>
+        
         </section>
 
         <section>
@@ -54,7 +58,7 @@ Bilangan oksidasi adalah muatan positif dan negatif pada suatu atom. Unsur yang 
             <p>2. Bilangan oksidasi ion monoatom (1 atom) dan poliatom (lebih dari 1 atom) sesuai dengan jenis muatan ionnya.</p>
             <p>Bilangan oksidasi ion monoatom Na+, Mg2+, dan Al3+ berturut-turut adalah +1, +2, dan +3.</p>
            <p>Bilangan oksidasi ion poliatom NH4+, SO42-, dan PO43- berturut-turut adalah +1, -2, dan -3.</p>
-            <img src="reaksiredoks2.jpg" alt="Bilangan oksidasi" />
+            <img src="monoatom.png" alt="Bilangan oksidasi" />
 
           </section>
           <section>
@@ -65,35 +69,35 @@ Bilangan oksidasi adalah muatan positif dan negatif pada suatu atom. Unsur yang 
             <p>Contoh: Bilangan oksidasi Mg dalam senyawa MgSO2 adalah +2.</p>
             <p>IIA = B, Al, Ga, In, Tl = +3</p>
             <p>Contoh: Bilangan oksidasi Al dalam senyawa Al2O3 adalah +3.</p>
-            <img src="reaksiredoks2.jpg" alt="Bilangan oksidasi" />
+            <img src="logam.png" alt="Bilangan oksidasi" />
 
           </section>
           <section>
             <p>4. Bilangan oksidasi unsur golongan transisi (golongan B) lebih dari satu.</p>
             <p>Bilangan oksidasi Au = +1 dan +3.</p>
             <p>Bilangan oksidasi Sn = +3 dan +4.</p> 
-           <img src="reaksiredoks2.jpg" alt="Bilangan oksidasi" />
+           <img src="transissi.png" alt="Bilangan oksidasi" />
 
           </section>
           <section>
             <p>5. Jumlah bilangan oksidasi unsur-unsur yang membentuk ion = jumlah muatannya.</p>
             <p>NH4+ = +1 </p>
-            <img src="reaksiredoks2.jpg" alt="Bilangan oksidasi" />
+            <img src="ion.png" alt="Bilangan oksidasi" />
 
           </section>
 
           <section>
             <p>6. Jumlah bilangan oksidasi unsur-unsur yang membentuk senyawa = 0.</p>
-            <p> H2O = 0
+            <p> H2O = 0</p>
 
-</p>
-            <img src="reaksiredoks2.jpg" alt="Bilangan oksidasi" />
+
+            <img src="senyawa.png" alt="Bilangan oksidasi" />
 
           </section>
           <section>
             <p>7. Bilangan oksidasi hidrogen (H) bila berikatan dengan logam = -1. Bila H berikatan dengan non-logam = +1.</p>
             <p>Biloks H dalam AlH3 = -1. </p>
-            <img src="reaksiredoks2.jpg" alt="Bilangan oksidasi" />
+            
 
           </section>
           <section>
@@ -101,7 +105,7 @@ Bilangan oksidasi adalah muatan positif dan negatif pada suatu atom. Unsur yang 
             <p>Biloks O dalam BaO2 = -1.
 
 </p>
-            <img src="reaksiredoks2.jpg" alt="Bilangan oksidasi" />
+            
 
           </section>
           <section>
@@ -218,7 +222,7 @@ Bilangan oksidasi adalah muatan positif dan negatif pada suatu atom. Unsur yang 
     Setarakan reaksi berikut: CuS + NO₃⁻ → Cu²⁺ + S + NO (suasana asam)
   </p>
   <p><strong>Penyelesaian:</strong></p>
-  {/* Penjelasan contoh penyelesaian dapat dimasukkan di sini jika diperlukan */}
+  {}
 </section>
 <section>
   
@@ -277,8 +281,58 @@ Bilangan oksidasi adalah muatan positif dan negatif pada suatu atom. Unsur yang 
     Setarakan reaksi berikut: Bi₂O₃ + ClO⁻ → BiO₃⁻ + Cl⁻ (suasana basa)
   </p>
   <p><strong>Penyelesaian:</strong></p>
-  {/* Penjelasan contoh penyelesaian dapat dimasukkan di sini jika diperlukan */}
+  {}
 </section>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+      {/* Reaksi */}
+      <text x="50" y="30" fontSize="18" fontWeight="bold">
+        Bi₂O₃ + ClO⁻ → BiO₃⁻ + Cl⁻
+      </text>
+
+      {/* oksidasi */}
+      <line x1="110" y1="35" x2="110" y2="90" stroke="orange" strokeWidth="2" />
+      <text x="120" y="60" fontSize="14" fill="orange">
+        Oksidasi
+      </text>
+
+      {/* reduksi */}
+      <line x1="270" y1="35" x2="270" y2="90" stroke="blue" strokeWidth="2" />
+      <text x="280" y="60" fontSize="14" fill="blue">
+        Reduksi
+      </text>
+
+      {/* Reaksi oksidasi */}
+      <text x="50" y="120" fontSize="16" fontWeight="bold">
+        O: 6OH⁻ + Bi₂O₃ → 2BiO₃⁻ + 3H₂O + 4e⁻
+      </text>
+      <line x1="80" y1="140" x2="80" y2="180" stroke="orange" strokeWidth="2" />
+      <text x="90" y="160" fontSize="14" fill="orange">
+        Selisih 4
+      </text>
+
+      {/* Reduksi */}
+      <text x="50" y="220" fontSize="16" fontWeight="bold">
+        R: 2e⁻ + H₂O + ClO⁻ → Cl⁻ + 2OH⁻
+      </text>
+      <line x1="80" y1="240" x2="80" y2="280" stroke="blue" strokeWidth="2" />
+      <text x="90" y="260" fontSize="14" fill="blue">
+        Selisih 2
+      </text>
+
+      {}
+      <text x="50" y="320" fontSize="16" fontWeight="bold">
+        O: 6OH⁻ + Bi₂O₃ → 2BiO₃⁻ + 3H₂O + 4e⁻
+      </text>
+      <line x1="340" y1="315" x2="390" y2="315" stroke="red" strokeWidth="2" />
+      <text x="400" y="320" fontSize="14" fill="red">
+        ×1
+      </text>
+
+      {}
+      <text x="50" y="370" fontSize="16" fontWeight="bold">
+        R: (×2)
+      </text>
+    </svg>
 
       
     </div>

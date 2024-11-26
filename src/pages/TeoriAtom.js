@@ -32,8 +32,9 @@ const TeoriAtom = () => {
             tidak mutlak. Dalam perkembangannya model atau teori atom terus mengalami perbaikan dan penyempurnaan.
       </p>
       
-      <h3>Teori atom John Dalton</h3>
-      <img src="John Dalton.jpg" alt="Model Atom Dalton" className="img-fluid mb-3" />
+      <div className="content-section">
+      <h2>Teori atom John Dalton</h2>
+      <img src="John Dalton.jpg" alt="Model Atom Dalton" className="image-section" />
       <p>Dalton mengemukakan tentang atom sebagai berikut:</p>
       <ul className="list">
         <li>Atom adalah bola pejal yang tidak bermuatan.</li>
@@ -57,8 +58,6 @@ const TeoriAtom = () => {
         <li>Masih ada partikel subatomik yang menyusun atom seperti proton, neutron, dan elektron.</li>
         <li>Tidak mengenal muatan dan sifat materi listrik sehingga tidak dapat menjelaskan bagaimana cara atom dapat berikatan.</li>
       </ul>
-
-      <div className="content-section">
         <h2>Teori Atom Thomson</h2>
       </div>
       <img src="Thomson.jpg" alt="Model Atom Thomson" className="image-section" />
