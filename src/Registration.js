@@ -11,7 +11,7 @@ const Registration = ({ setUserData }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setUserData({ name, email, password });
-    navigate('/login');
+    navigate('/login'); // Setelah registrasi, akan diarahkan ke halaman login
   };
 
   return (
@@ -59,6 +59,10 @@ const Registration = ({ setUserData }) => {
           </div>
           <button type="submit" className="btn-primary">Register</button>
         </form>
+
+        <div className="login-link">
+          <p>Sudah punya akun? <span onClick={() => navigate('/login')} className="link">Login di sini</span></p>
+        </div>
       </div>
     </div>
   );
