@@ -1,118 +1,90 @@
-/* Halaman Utama */
+/* Global Style */
 .stoikiometri-page {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f9fc;
-    color: #333;
-    padding: 20px;
-  }
-  
-  /* Header */
-  .stoikiometri-header {
-    background-color: #005cbf;
-    color: white;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .stoikiometri-logo-section {
-    display: flex;
-    align-items: center;
-  }
-  
-  .stoikiometri-logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
-  }
-  
-  .stoikiometri-website-name {
-    font-size: 1.8rem;
-    font-weight: bold;
-  }
-  
-  /* Navbar */
-  .stoikiometri-navbar {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .stoikiometri-navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .stoikiometri-navbar li {
-    margin: 0;
-  }
-  
-  .stoikiometri-navbar a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .stoikiometri-navbar a:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Konten */
-  .stoikiometri-content {
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  .stoikiometri-title {
-    font-size: 2rem;
-    color: #005cbf;
-    margin-bottom: 15px;
-  }
-  
-  .stoikiometri-subtitle {
-    font-size: 1.5rem;
-    color: #003d80;
-    margin-top: 20px;
-  }
-  
-  .stoikiometri-paragraph {
-    font-size: 1rem;
-    color: #444;
-    margin: 10px 0;
-    text-align: justify;
-    padding: 0 20px;
-  }
-  
-  /* Gambar */
-  .stoikiometri-image-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-  }
-  
-  .stoikiometri-main-image {
-    width: 80%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .stoikiometri-main-image:hover {
-    transform: scale(1.05);
-  }
-  
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Container */
+.stoikiometri-content {
+  max-width: 1800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffeeee;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.stoikiometri-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.stoikiometri-logo {
+  max-width: 50px;
+  margin-bottom: 10px;
+}
+
+.stoikiometri-website-name {
+  font-size: 40px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* Navbar */
+.stoikiometri-navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stoikiometri-navbar ul li {
+  font-size: 18px;
+}
+
+.stoikiometri-navbar ul li a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.stoikiometri-navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Content */
+.stoikiometri-title {
+  font-size: 30px;
+  color: #444;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.stoikiometri-paragraph {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Image */
+.stoikiometri-image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.stoikiometri-main-image {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 3px solid #ddd;
+}
