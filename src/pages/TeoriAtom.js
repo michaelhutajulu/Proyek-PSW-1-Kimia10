@@ -19,7 +19,7 @@ const TeoriAtom = () => {
         Berikut pengertian atom menurut para ahli:
       </p>
     <div className="content-section">
-      <h2>Teori Atom John Dalton</h2>
+      <h2>1. Teori Atom John Dalton</h2>
       <div className="alert-box">
         <strong>Halo, Sobat pintar!</strong> Kali ini kita akan belajar tentang <strong>Perkembangan Teori Atom</strong>. Ada <strong>Teori Atom Dalton</strong> sebagai pembuka nih, Sobat!
       </div>
@@ -33,9 +33,8 @@ const TeoriAtom = () => {
       </p>
       
       <div className="content-section">
-      <h2>Teori atom John Dalton</h2>
       <img src="John Dalton.jpg" alt="Model Atom Dalton" className="image-section" />
-      <p>Dalton mengemukakan tentang atom sebagai berikut:</p>
+      <p>John Dalton mengemukakan tentang atom sebagai berikut:</p>
       <ul className="list">
         <li>Atom adalah bola pejal yang tidak bermuatan.</li>
         <li>Atom sebagai terkecil suatu materi yang tidak dapat dibagi lagi.</li>
@@ -58,7 +57,7 @@ const TeoriAtom = () => {
         <li>Masih ada partikel subatomik yang menyusun atom seperti proton, neutron, dan elektron.</li>
         <li>Tidak mengenal muatan dan sifat materi listrik sehingga tidak dapat menjelaskan bagaimana cara atom dapat berikatan.</li>
       </ul>
-        <h2>Teori Atom Thomson</h2>
+        <h2>2. Teori Atom Thomson</h2>
       </div>
       <img src="Thomson.jpg" alt="Model Atom Thomson" className="image-section" />
       <p> Dalam perkembangannya, Thomson memperbaiki kekurangan-kekurangan yang ada pada teori atom Dalton sebleumnya. Pada tahun 1897, Thomson menemukan partikel yang bermuatan negatif dan disebut dengan elektron.

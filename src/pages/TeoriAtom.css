@@ -16,6 +16,8 @@
 /* Content Section */
 .content-section {
     margin-bottom: 30px; /* Jarak bawah untuk setiap bagian konten */
+    margin: 30px;
+    
 }
 
 /* Alert Box */
