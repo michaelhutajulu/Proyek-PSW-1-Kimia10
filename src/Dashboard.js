@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar'; 
-import { Link } from 'react-router-dom'; 
+import { Link, useNavigate } from 'react-router-dom'; 
 import './web.css';
-
 
 const Dashboard = () => {
   const sliderImages = [
@@ -11,6 +10,12 @@ const Dashboard = () => {
     '/images/slider2.png',
   ];
   const [currentImage, setCurrentImage] = useState(0);
+  const navigate = useNavigate();
+
+  // Fungsi logout
+  const handleLogout = () => {
+    navigate('/login'); 
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -27,14 +32,14 @@ const Dashboard = () => {
           <h1 className="website-name">Chem10thguide</h1>
         </div>
       </header>
-      
-      <Navbar />
+
+      <Navbar onLogout={handleLogout} />
 
       <main className="dashboard-main">
         <div className="box slider">
           <img
             src={sliderImages[currentImage]}
-            alt={`Slider ${currentImage + 1}`}
+            alt={`Slider ${currentImage + 1}`}  
             className="slider-image"
           />
         </div>
@@ -43,7 +48,7 @@ const Dashboard = () => {
           <div className="welcome-text">
             <h1>Selamat Datang di Chem10thguide</h1>
             <p>
-              Kami menyediakan panduan lengkap untuk belajar kimia Kelas 10 SMA
+              Kami menyediakan panduan lengkap untuk belajar kimia tingkat SMA
               dengan materi interaktif dan mudah dipahami.
             </p>
           </div>
