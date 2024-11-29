@@ -1,131 +1,216 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import './IkatanKimia.css';
+import { Link } from 'react-router-dom';
+
 
 const IkatanKimia = () => {
+  const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="dashboard-container">
+      {/* Header */}
       <header className="dashboard-header">
         <div className="logo-section">
           <img src="/logo192.png" alt="Chem10thguide Logo" className="logo" />
           <h1 className="website-name">Chem10thguide</h1>
         </div>
       </header>
+
+      {/* Navbar */}
       <Navbar />
-    <div className="container">
-      
-      {/* Header */}
-      <header className="header">
-        <h1>Ikatan Kimia</h1>
-        <p>
-        Ikatan kimia adalah dasar dari semua materi di alam semesta. Dengan memahami cara atom bergabung, kita dapat menjelaskan berbagai fenomena dalam kehidupan sehari-hari.
-        </p>
-      </header>
-      
-      {/* Content */}
-      <section className="content">
-        <div className="main-content">
-          <h2>Apa itu ikatan kimia?</h2>
-          <p>
-          Ikatan kimia adalah gaya tarik yang mengikat atom-atom untuk membentuk molekul atau senyawa.
-            Ini terjadi karena atom berusaha mencapai keadaan stabil dengan memiliki konfigurasi elektron yang lengkap, seperti gas mulia.
-            Ikatan kimia juga terjadi karena pencapaian kestabilan suatu unsur. 
-            Elektron yang berperan pada pembentukan ikatan kimia adalah elektron valensi dari suatu atom.
-          </p>
-          <div className="highlight">
+
+      {/* Main Container*/}
+      <div className="container">
+      {/* Sidebar */}
+      <aside className="sidebar">
+        <h2>Materi:</h2>
+        <ul>
+          <li
+            className="active"
+            onClick={() => scrollToSection('pengertian-ikatan-kimia')}>
+            Pengertian Ikatan Kimia
+            </li>
+            <li onClick={() => scrollToSection('sifat-sifat-ikatan-kimia')}>
+              Sifat - sifat Ikatan Kimia
+            </li>
+            <li onClick={() => scrollToSection('jenis-jenis-ikatan-kimia')}>
+              Jenis - jenis Ikatan Kimia
+            </li>
+          </ul>
+        </aside>
+
+      {/* Main Content */}
+      <main className="content">
+        {/* Section: Pengertian Ikatan Kimia */}
+        <section id="pengertian-iakatan-kimia">
+          <h1>Pengertian Ikatan Kimia</h1>
+          <div className="image-container">
+            <img
+              src="ikatan kimiaa.jpg"
+              alt="Model Ikatan Kimia"
+              className="content-image"
+            />
             <p>
-            "Ikatan kimia menghubungkan atom-atom untuk menciptakan segala sesuatu di sekitar kita, 
-            dari air yang kita minum hingga udara yang kita hirup."
+               Ikatan kimia kelas 10 mempelajari bagaimana atom-atom bergabung
+               membentuk senyawa atau molekul.
             </p>
           </div>
-        </div>
-        <div className="image">
-          <img src="Ikatan Kimia.jpg" alt="Ikatan Kimia Ilustrasi" />
-        </div>
-      </section>
-
-      {/* Types Section */}
-      <section className="types">
-        <h2>Jenis-Jenis Ikatan Kimia</h2>
-        <p>
-        Sifat-sifat zat sebagian ditentukan oleh ikatan kimia antara atom-atom pembentukya. 
-        Suatu ikatan kimia adalah gaya tarik menarik yang kaut antara atom-atom tertentu di dalam suatu zat. 
-        Perubahan kimia atau reaksi kimia terjadi karena penggabungan atau pemisahan atom-atom dengan cara tertentu 
-        sehingga terbentuk zatyang lebih stabil. Berikut merupakan jenis-jenis ikatan kimia:
-        </p>
-      <div className="type-boxes">
-        <div className="type-boxes">
-        <h3>Ikatan Ionik</h3>
-        <p>
-        Terjadi ketika atom memberikan atau menerima elektron. Contohnya adalah NaCl (garam dapur), di mana ion natrium (Na⁺) 
-        dan klorida (Cl⁻) saling tarik-menarik. sedangkan ion negatif terbentuk karena unsurnonlogam menerima elektronnya.
-        Ion positif terbentuk karena suatu atom melepaskanelectron yaitu atom unsur logam. Ion negative terbentuk karena 
-        suatu atom menerimaelectron yaitu atom unsur nonlogam. Ikatan ion terjadi karena serah terima elektron.
-        </p>
-        <img src="Ikatan ionik.png" alt="Ikatan Ionik" className="type-image" />
-      </div>
-
-      <div className="type-box">
-        <h3>Ikatan Kovalen</h3>
-        <p>
-        Terbentuk saat dua atom berbagi pasangan elektron. Contoh: Molekul air (H₂O), di mana atom hidrogen 
-        dan oksigen berbagi elektron untuk mencapai kestabilan.
-        yang dalam pembentukannya, masing-masing atom mempunyai orbital pada kulit terluaryang berisi elektron tunggal. 
-        </p>
-        <img src="Ikatan kovalen.png" alt="Ikatan Kovalen" className="type-image" />
-      </div>
-
-      <div className="type-box">
-        <h3>Ikatan logam</h3>
-        <p>
-        Terjadi di antara atom logam. Elektron-elektron valensi bergerak bebas, memungkinkan logam menjadi konduktor listrik yang baik. Contoh: tembaga (Cu).
-        </p>
-        <img src="Ikatan logam.png" alt="Ikatan Logam" className="type-image" />
-      </div>
-      </div>
-      </section>
-    </div>
-
-       {/* Importance Section */}
-       <section className="importance">
-        <h2>Pentingnya Ikatan Kimia</h2>
-        <p>
-        Ikatan kimia adalah inti dari banyak proses di alam. Tanpa itu, tidak akan ada air, makanan, atau bahkan kehidupan. Berikut adalah beberapa peran penting ikatan kimia:
-        </p>
-        <ul>
-          <li><b>Dalam Biologi:</b> Molekul seperti DNA, protein, dan karbohidrat semuanya terbentuk melalui ikatan kimia. </li>
-          <li><b>Dalam Kimia:</b> Reaksi kimia, seperti pembakaran bahan bakar, melibatkan pemutusan dan pembentukan ikatan.</li>
-          <li><b>Dalam Industri:</b> Material seperti plastik, baja, dan kaca dihasilkan melalui manipulasi ikatan kimia.</li>
-        </ul>
+          <article className="description">
+            <p>
+                Teori tentang ikatan kimia lahir dari gagasan Gilbert N. Lewis.
+                Dalam artikelnya yang dirilis tahun 1916, Lewis meneliti terkait
+                kesulitan golongan gas mulia (VIIIA) membentuk suatu ikatan
+                kimia. Diduga, gas mulia memiliki keunikan dalam konfigurasi
+                elektronnya yang dapat mencegah persenyawaan dengan unsur lain.
+            </p>
+            <ul>
+              <li>Beberapa unsur tidak tersusun dari atom melainkan molekul.</li>
+              <li>Atom-atom dari unsur yang sama dapat memiliki massa yang
+              berbeda.
+              </li>
+              <li>Masih ada partikel subatomik yang menyusun atom seperti
+              proton, neutron, dan elektron.
+              </li>
+            </ul>
+          </article>
         </section>
 
-        {/* Example Section */}
-        <section className="examples">
-          <h2>Contoh Aplikasi Ikatan Kimia</h2>
-          <div className="example-boxes">
-            <div className="example-box">
-              <h3>Air (H₂O)</h3>
-              <p>
-              Air terdiri dari dua atom hidrogen yang berbagi elektron dengan satu atom oksigen melalui ikatan kovalen. Ini adalah molekul paling vital untuk kehidupan.
-              </p>
-            </div>
+        {/* Section: Sifat-sfat Ikatan Kimia */}
+        <section id="sifat-sifat-ikatan-kimia">
+          <h1>Sifat - sifat Ikatan Kimia</h1>
+          <article className="description">
+            <p>
+              Memahami sifat-sifat ikatan kimia sangat penting untuk memahami 
+              bagaimana unsur-unsur yang berbeda berinteraksi dan bergabung. 
+              Umumnya, ikatan kimia dapat bervariasi dalam hal panjang, 
+              kekuatan, polaritas, dan lainnya.
+            </p>
+            <p>
+              Panjang ikatan adalah jarak fisik antara dua atom yang 
+              berikatan-semakin pendek ikatannya, semakin kuat ikatannya.
+              Kekuatan ikatan mengacu pada jumlah energi yang dibutuhkan untuk memutus 
+              ikatan kimia-ikatan yang lebih kuat membutuhkan lebih banyak energi. 
+              Dan polaritas menggambarkan distribusi elektron yang tidak merata dalam 
+              suatu ikatan, yang menentukan daya tariknya terhadap partikel lain. 
+            </p>
+            <p>
+              Selain sifat-sifat ini, ikatan kimia juga dapat diklasifikasikan ke 
+              dalam tiga jenis utama: ionik, kovalen, dan logam. Penting untuk mengetahui
+              perbedaan ini agar Anda dapat menganalisis berbagai jenis struktur ikatan 
+              dalam kimia secara akurat.
+            </p>
+            <ul>
+              <li>
+                <strong>Ionik</strong>
+                <p>
+                Ikatan ionik terjadi ketika elektron dari satu atom ditransfer ke atom lain, 
+                   membentuk ion bermuatan positif (kation) dan negatif (anion). Gaya elektrostatik 
+                   antara ion-ion tersebut menciptakan ikatan yang kuat.
+                </p>
+                <strong>Contoh:</strong>
+                <p>Contoh: Natrium klorida (NaCl). Natrium (Na) kehilangan satu elektron menjadi Na⁺, 
+                sementara klorin (Cl) menerima elektron menjadi Cl⁻.
+                </p>
+              </li>
+              <li>
+                <strong>Kovalen</strong>
+                <p>Ikatan kovalen terjadi ketika dua atom berbagi satu atau lebih pasangan elektron 
+                    untuk mencapai kestabilan (biasanya memenuhi aturan oktet). Ikatan ini biasanya terjadi 
+                    antara atom-atom non-logam.
+                </p>
+                <strong>Contoh:</strong>
+                <p>Molekul air (H₂O), di mana atom oksigen berbagi elektron dengan dua atom hidrogen.</p>
+              </li>
+              <li>
+                <strong>Logam</strong>
+                <p>
+                Ikatan logam terjadi antara atom-atom logam, di mana elektron valensi "berkelana" bebas 
+                    di antara inti-inti atom dalam struktur logam. Elektron-elektron ini membentuk lautan elektron 
+                    yang mengikat ion-ion logam bersama-sama.
+                </p>
+                <strong>Contoh:</strong>
+                <p>Logam tembaga (Cu) dan besi (Fe).</p>
+              </li>
+            </ul>
+          </article>
+        </section>
+        
+        {/* section: Jenis-jenis Ikatan Kimia */}
+        <section id="jenis-jenis-ikatan-kimia">
+          <h1>Jenis - jenis Ikatan Kimia</h1>
+          <article className="description">
+            <p>
+              Ikatan kimia dapat dibagi menjadi beberapa jenis berdasarkan cara
+              atom-atom berbagi atau mentransfer elektron. Berikut adalah tiga
+              jenis utama ikatan kimia:
+            </p>
+            <ul>
+              <li>
+                <strong>Ikatan Ionik:</strong> Ikatan yang terjadi ketika atom
+                  satu elemen menyerahkan elektron kepada atom lain, biasanya
+                  antara logam dan non-logam.
+              </li>
+              <li>
+                <strong>Ikatan Kovalen:</strong> Ikatan di mana pasangan atom
+                  berbagi elektron untuk mencapai kestabilan, umumnya terjadi
+                  antara non-logam.
+              </li>
+              <li>
+                <strong>Ikatan Logam:</strong> Ikatan yang terjadi dalam logam,
+                  di mana elektron-elektron bebas bergerak di antara ion positif
+                  logam, menciptakan "lautan elektron."
+              </li>
+            </ul>
+          </article>
+        </section>
+        </main>
+        </div>
+        
+        {/* Card Section */}
+        <div className="card-container">
+          <div className="card">
+            <img
+              src="Ikatan kovalen.png"
+              alt="Ikatan Kovalen"
+              className="card-image"
+            />
+            <div className="card-content">
+              <h3>Overview of</h3>
+              <h2>Ikatan Kovalen</h2>
+              <Link to="/ikatan-kovalen">
+              <button className="card-button">Pelajari Sekarang</button>
+              </Link>
 
-            <div className="example-box">
-              <h3>Karbon Dioksida (CO₂)</h3>
-              <p>
-              Molekul gas ini terbentuk melalui ikatan kovalen antara karbon dan oksigen. Ini berperan dalam proses fotosintesis dan respirasi.
-              </p>
             </div>
+          </div>
+          <div className="card">
+            <img src="ikatan ion 2.jpg" alt="Ikatan Ion" className="card-image"/>
+            <div className="card-content">
+              <h3>Overview of</h3>
+              <h2>Ikatan Ion</h2>
+            <Link to="/ikatan-ion">
+            <button className="card-button">Pelajari Sekarang</button>
+            </Link>
             </div>
-            </section>
-
-            {/* Footer */}
-            <footer className="footer">
-              <p>
-              Belajar tentang ikatan kimia membantu kita memahami dunia di tingkat paling mendasar. Terus eksplorasi untuk menemukan lebih banyak!
-              </p>
-            </footer>
-            </div>
+          </div>
+        <div className="card">
+          <img
+          src="Ikatan logam.png"
+          alt="Ikatan logam"
+          className="card-image"
+        />
+        <div className="card-content">
+          <h3>Overview of</h3>
+          <h2>Ikatan Logam</h2>
+        <button className="card-button">Pelajari Sekarang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   );
 };
 
