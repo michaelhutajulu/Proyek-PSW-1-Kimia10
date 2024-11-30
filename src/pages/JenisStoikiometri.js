@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './JenisStoikometri.css';
 import Navbar from '../components/Navbar';
-const JenisStoikometri = () => {
+const JenisStoikiometri = () => {
   return (
     <div className="periodic-table-container">
       <header className="periodic-header">
@@ -53,4 +53,4 @@ const JenisStoikometri = () => {
   );
 };
 
-export default JenisStoikometri;
+export default JenisStoikiometri;

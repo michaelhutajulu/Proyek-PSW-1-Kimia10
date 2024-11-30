@@ -12,8 +12,8 @@ import IkatanKimia from './pages/IkatanKimia';
 import ReaksiRedoks from './pages/ReaksiRedoks';
 import Kontak from './pages/Kontak';
 import Soal from './pages/Soal'; // Import untuk halaman Soal
-import JenisStoikometri from './pages/JenisStoikometri';
-
+import JenisStoikiometri from './pages/JenisStoikiometri';
+import TabelPeriodik2 from './pages/TabelPeriodik2';
 function App() {
   const [userData, setUserData] = useState(null); // State untuk menyimpan data user saat registrasi
 
@@ -45,7 +45,8 @@ function App() {
           <Route path="/stoikiometri" element={<Stoikiometri />} />
           <Route path="/ikatan-kimia" element={<IkatanKimia />} />
           <Route path="/reaksi-redoks" element={<ReaksiRedoks />} />
-          <Route path="/jenis-stoikometri" element={<JenisStoikometri />} />
+          <Route path="/jenis-stoikiometri" element={<JenisStoikiometri />} />
+          <Route path="/TabelPeriodik2.js" element={<TabelPeriodik2 />} />
           <Route path="/kontak" element={<Kontak />} />
           <Route path="/soal" element={<Soal />} />
         </Routes>
