@@ -45,8 +45,8 @@ function App() {
           <Route path="/stoikiometri" element={<Stoikiometri />} />
           <Route path="/ikatan-kimia" element={<IkatanKimia />} />
           <Route path="/reaksi-redoks" element={<ReaksiRedoks />} />
-          <Route path="/jenis-stoikiometri" element={<JenisStoikiometri />} />
-          <Route path="/TabelPeriodik2.js" element={<TabelPeriodik2 />} />
+          <Route path="/JenisStoikiometri" element={<JenisStoikiometri />} />
+          <Route path="/TabelPeriodik2.js" element={<TabelPeriodik2.js />} />
           <Route path="/kontak" element={<Kontak />} />
           <Route path="/soal" element={<Soal />} />
         </Routes>

@@ -140,4 +140,4 @@ const [showText, setShowText] = useState(false);
   );
 };
 
-export default TabelPeriodik2;  
+export default TabelPeriodik2;
