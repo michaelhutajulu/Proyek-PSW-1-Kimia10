@@ -1,0 +1,87 @@
+/* General container styling */
+
+    
+    .periodic-content {
+      padding: 20px;
+    }
+    
+    .periodic-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    
+    .periodic-image {
+      display: block;
+      margin: 20px auto;
+      width: 50%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .periodic-description,
+    .periodic-text {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+    
+    .periodic-section-title {
+      margin-top: 20px;
+      font-size: 1.25rem;
+      color: #4CAF50;
+    }
+    
+    /* Navbar styling for reference */
+    .more-info {
+      transition: max-height 0.5s ease-in-out;
+      overflow: hidden;
+    }
+    
+    .toggle-button {
+      margin: 20px 0;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer
+    }
+    
+    .toggle-button:hover {
+      background-color: #0056b3;
+    }
+    .animated-button {
+      background: linear-gradient(90deg, #ff7e5f, #feb47b);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .animated-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 15px rgba(255, 126, 95, 0.5);
+    }
+    
+    .tips-container {
+      margin-top: 20px;
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transition: max-height 0.5s ease, opacity 0.5s ease;
+    }
+    
+    .tips-container.show {
+      max-height: 300px;
+      opacity: 1;
+    }
+    
+    ol {
+      text-align: left;
+      padding-left: 20px;
+    }
