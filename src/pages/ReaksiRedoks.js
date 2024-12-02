@@ -148,7 +148,7 @@ const ReaksiRedoks = () => {
      <div className="card-container1">
       <div className="card1">
       <img
-      src="logam.png"
+      src="chemistry.png"
       alt="pertambahan dan penurunan bilangan oksidasi"
       className="card-image1"
       />
@@ -161,7 +161,7 @@ const ReaksiRedoks = () => {
       </div>
 
       <div className="card1">
-       <img src="reaksi redoks.png"
+       <img src="chemist2.jpg"
        alt="Metode Setengah reaksi"
        className="card-image1"/>
       <div className="card-content1">
@@ -174,7 +174,7 @@ const ReaksiRedoks = () => {
       <div className="card1">
 
       <img
-      src="reaksiredoks2.jpg"
+      src="chemist3.jpg"
       alt="Penyetaraan reaksi"
       className="card-image1"
       />
