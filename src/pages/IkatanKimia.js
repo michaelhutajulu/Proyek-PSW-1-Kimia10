@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar';
 import './IkatanKimia.css';
 import { Link } from 'react-router-dom';
 
-
 const IkatanKimia = () => {
   const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
@@ -73,7 +72,7 @@ const IkatanKimia = () => {
               </li>
               <li>Masih ada partikel subatomik yang menyusun atom seperti
               proton, neutron, dan elektron.
-              </li>
+              </li>  
             </ul>
           </article>
         </section>
@@ -122,7 +121,7 @@ const IkatanKimia = () => {
                     antara atom-atom non-logam.
                 </p>
                 <strong>Contoh:</strong>
-                <p>Molekul air (H₂O), di mana atom oksigen berbagi elektron dengan dua atom hidrogen.</p>
+                <p>Molekul air (H₂O), di mana 1oksigen berbagi elektron dengan dua atom hidrogen.</p>
               </li>
               <li>
                 <strong>Logam</strong>
