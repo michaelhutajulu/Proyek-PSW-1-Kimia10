@@ -46,7 +46,7 @@ function App() {
           <Route path="/ikatan-kimia" element={<IkatanKimia />} />
           <Route path="/reaksi-redoks" element={<ReaksiRedoks />} />
           <Route path="/JenisStoikiometri" element={<JenisStoikiometri />} />
-          <Route path="/TabelPeriodik2.js" element={<TabelPeriodik2.js />} />
+          <Route path="/TabelPeriodik2" element={<TabelPeriodik2 />} />
           <Route path="/kontak" element={<Kontak />} />
           <Route path="/soal" element={<Soal />} />
         </Routes>

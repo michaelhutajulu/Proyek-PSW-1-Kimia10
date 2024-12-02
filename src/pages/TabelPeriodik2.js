@@ -1,5 +1,7 @@
+// FullExplanation.js
+import Navbar from '../components/Navbar'
+import './TabelPeriodik.css';
 import React, { useState } from "react";
-import Navbar from '../components/Navbar';
 const TabelPeriodik2 = () => {
 const [showText, setShowText] = useState(false);
 
@@ -8,11 +10,11 @@ const [showText, setShowText] = useState(false);
   };
   
   return (
-    <div className="periodic-table-container">
-      <header className="periodic-header">
-        <div className="periodic-logo-section">
-          <img src="/logo192.png" alt="Chem10thguide Logo" className="periodic-logo" />
-          <h1 className="periodic-website-name">Chem10thguide</h1>
+    <div className="dashboard-container">
+      <header className="dashboard-header">
+        <div className="logo-section">
+          <img src="/logo192.png" alt="Chem10thguide Logo" className="logo" />
+          <h1 className="website-name">Chem10thguide</h1>
         </div>
       </header>
       <Navbar />
@@ -140,4 +142,4 @@ const [showText, setShowText] = useState(false);
   );
 };
 
-export default TabelPeriodik2;
+export default TabelPeriodik2;  
