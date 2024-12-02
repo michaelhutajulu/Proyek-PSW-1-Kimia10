@@ -1,8 +1,7 @@
-import React from 'react';
-import Navbar from '../components/Navbar'; 
+import React from 'react'; 
 import { Link } from 'react-router-dom';
-import '../pages/Stoikiometri.css'; // Perbaiki cara impor CSS
-
+import './Stoikiometri.css'; // Perbaiki cara impor CSS
+import Navbar from '../components/Navbar';
 const Stoikiometri = () => {
   return (
     <div className="dashboard-container">
@@ -12,7 +11,7 @@ const Stoikiometri = () => {
         <h1 className="website-name">Chem10thguide</h1>
       </div>
     </header>
-      <Navbar />
+    <Navbar />
       <div className="stoikiometri-content">
         <h2 className="stoikiometri-title"><b>Stoikiometri</b></h2>
         <div className="stoikiometri-image-container">
@@ -80,7 +79,7 @@ const Stoikiometri = () => {
           yaitu sebanyak 6,02 x 10<sup>23</sup> partikel.
         </p>
         <div className="stoikiometri-button-container">
-          <Link to="/JenisStoikometri" className="stoikiometri-button">
+          <Link to="/JenisStoikiometri" className="stoikiometri-button">
             Lihat Jenis Stoikiometri
           </Link>
         </div>
