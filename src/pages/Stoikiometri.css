@@ -1,104 +1,179 @@
-/* Page Container */
-.stoikiometri-content {
-  max-width: 800px; /* Sesuaikan dengan maksimal lebar */
-  margin: 30px auto; /* Margin atas dan bawah, pusatkan */
-  padding: 20px; /* Padding di dalam kontainer */
-  background: #ffeeee; /* Latar belakang */
-  border-radius: 10px; /* Sudut melengkung */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+/* Container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  gap: 20px;
 }
 
-/* Section Titles */
-.stoikiometri-title {
-  font-size: 2rem; /* Ukuran font untuk judul */
-  color: #333; /* Warna teks */
-  margin-bottom: 20px; /* Jarak bawah */
-  text-align: center; /* Pusatkan teks */
+.sidebar {
+  width: 25%;
+  min-width: 250px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-/* Content Section */
-.stoikiometri-paragraph {
-  font-size: 16px; /* Ukuran font untuk teks */
-  color: #555; /* Warna teks */
-  margin-bottom: 30px; /* Jarak bawah antar konten */
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
-/* Alert Box */
-.stoikiometri-alert-box {
-  background-color: #e3f2fd; /* Latar belakang kotak */
-  color: #1e88e5; /* Warna teks */
-  padding: 15px; /* Padding dalam kotak */
-  margin-bottom: 20px; /* Jarak bawah */
-  border: 1px solid #90caf9; /* Garis batas */
-  border-radius: 5px; /* Sudut melengkung */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* List Styling */
-.stoikiometri-list {
-  list-style: disc; /* Tipe daftar */
-  padding-left: 40px; /* Padding kiri */
-  margin-top: 10px; /* Jarak atas */
+.sidebar ul li {
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* Image Section */
-.stoikiometri-main-image {
-  display: block; /* Tampilkan sebagai blok */
-  margin: 20px auto; /* Margin atas dan bawah, pusatkan */
-  max-width: 100%; /* Maksimal lebar */
-  height: auto; /* Tinggi otomatis */
-  border-radius: 20px; /* Sudut melengkung */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Bayangan */
+.sidebar ul li:hover {
+  background-color: #f1f1f1;
 }
 
-/* Model Atom Container */
-.stoikiometri-model-atom-container {
-  margin-top: 20px; /* Jarak atas */
-  padding: 15px; /* Padding di dalam kontainer */
-  background-color: #f4faff; /* Latar belakang */
-  border: 1px solid #d6e8f5; /* Garis batas */
-  border-radius: 8px; /* Sudut melengkung */
+.sidebar ul .active {
+  background-color: #007bff;
 }
 
-/* Model Atom Container Title */
-.stoikiometri-model-atom-container h2 {
-  text-align: center; /* Pusatkan teks */
-  font-size: 1.5em; /* Ukuran font */
-  color: #333; /* Warna teks */
-  margin-bottom: 15px; /* Jarak bawah */
+.content {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Model Atom Images */
-.stoikiometri-model-atom-images {
-  display: flex; /* Flexbox */
-  justify-content: space-around; /* Jarak antar item */
-  flex-wrap: wrap; /* Biarkan membungkus */
-  gap: 15px; /* Jarak antar item */
+/* Content Headings */
+.content h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-/* Model */
-.stoikiometri-model {
-  text-align: center; /* Pusatkan teks */
-  max-width: 150px; /* Maksimal lebar */
+/* Image Container */
+.image-container {
+  text-align: center;
+  margin-top: 20px;
 }
 
-/* Model Image */
-.stoikiometri-model img {
-  width: 100%; /* Lebar penuh kontainer */
-  max-width: 120px; /* Maksimal lebar gambar */
-  height: auto; /* Tinggi otomatis */
-  border-radius: 8px; /* Sudut melengkung */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan */
-  transition: transform 0.3s ease; /* Transisi saat hover */
+.image-container img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
 }
 
-/* Hover Effect for Model Image */
-.stoikiometri-model img:hover {
-  transform: scale(1.1); /* Perbesar saat hover */
+.image-container p{
+  font-size: 14px;
+  color: #555;
 }
 
-/* Model Description */
-.stoikiometri-model p {
-  margin-top: 8px; /* Jarak atas */
-  font-size: 0.9em; /* Ukuran font */
-  color: #555; /* Warna teks */
+/* Description Styling */
+.description {
+  line-height: 1.6;
+  font-size: 16px;
+  color: #555;
+}
+
+.description ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.description ul li {
+  list-style-type: disc;
+  margin-bottom: 10px;
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.card-content h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .sidebar {
+      width: 100%;
+  }
+  
+  .content {
+      width: 100%;
+  }
+
+  .card-container {
+      flex-direction: column;
+      align-items: center;
+  }
 }
