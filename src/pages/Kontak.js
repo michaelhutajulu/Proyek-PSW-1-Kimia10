@@ -74,38 +74,7 @@ const Kontak = () => {
           onChange={(e) => setMessage(e.target.value)} 
           required 
         />
-        <div className="contact-method">
-          <label>
-            <input 
-              type="radio" 
-              name="contact-method" 
-              value="email" 
-              checked={contactMethod === 'email'} 
-              onChange={() => setContactMethod('email')} 
-            />
-            Email
-          </label>
-          <label>
-            <input 
-              type="radio" 
-              name="contact-method" 
-              value="phone" 
-              checked={contactMethod === 'phone'} 
-              onChange={() => setContactMethod('phone')} 
-            />
-            Phone
-          </label>
-          <label>
-            <input 
-              type="radio" 
-              name="contact-method" 
-              value="whatsapp" 
-              checked={contactMethod === 'whatsapp'} 
-              onChange={() => setContactMethod('whatsapp')} 
-            />
-            WhatsApp
-          </label>
-        </div>
+        
         <button type="submit">Send Message</button>
       </form>
       
