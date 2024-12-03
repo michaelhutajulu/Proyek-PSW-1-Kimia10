@@ -201,10 +201,13 @@ const IkatanKimia = () => {
           alt="Ikatan logam"
           className="card-image"
         />
+
         <div className="card-content">
           <h3>Overview of</h3>
           <h2>Ikatan Logam</h2>
+          <Link to="/ikatan-Logam">
         <button className="card-button">Pelajari Sekarang</button>
+        </Link>
         </div>
       </div>
     </div>
