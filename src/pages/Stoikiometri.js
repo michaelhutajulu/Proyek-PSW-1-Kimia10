@@ -202,18 +202,15 @@ const Stoikiometri = () => {
 <div className="card-container">
   <div className="card">
     <img
-      src="Ikatan kovalen.png"
-      alt="Ikatan Kovalen"
+      src="/Stoikiometri2.jpg"
+      alt="Stoikiometri"
       className="card-image"
     />
     <div className="card-content">
       <h3>Overview of</h3>
-      <h2> Stoikiometri</h2>
+      <h2> Mau tes dulu? tekan tombol dibawah ini</h2>
       <div className="card-buttons">
         <Link to="/kuisstoikiometri.js">
-          <button className="card-button">Soal</button>
-        </Link>
-        <Link to="/kuis-ikatan-kovalen">
           <button className="card-button">Kuis</button>
         </Link>
       </div>
@@ -221,44 +218,22 @@ const Stoikiometri = () => {
   </div>
   <div className="card">
     <img
-      src="ikatan ion 2.jpg"
+      src="/rumus3.png"
       alt="Ikatan Ion"
       className="card-image"
     />
     <div className="card-content">
       <h3>Overview of</h3>
-      <h2>Ikatan Ion</h2>
+      <h2>Udah Paham? gas kerjakan soal</h2>
       <div className="card-buttons">
         <Link to="/soal-ikatan-ion">
           <button className="card-button">Soal</button>
         </Link>
-        <Link to="/kuis-ikatan-ion">
-          <button className="card-button">Kuis</button>
-        </Link>
       </div>
     </div>
   </div>
-  <div className="card">
-    <img
-      src="Ikatan logam.png"
-      alt="Ikatan Logam"
-      className="card-image"
-    />
-    <div className="card-content">
-      <h3>Overview of</h3>
-      <h2>Ikatan Logam</h2>
-      <div className="card-buttons">
-        <Link to="/soal-ikatan-logam">
-          <button className="card-button">Soal</button>
-        </Link>
-        <Link to="/kuis-ikatan-logam">
-          <button className="card-button">Kuis</button>
-        </Link>
-      </div>
     </div>
   </div>
-</div>
-</div>
 );
 };
 
