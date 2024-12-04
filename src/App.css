@@ -12,3 +12,17 @@ h1 {
   font-size: 2rem;
   color: #007bff;
 }
+
+.footer {
+  color: #000000; 
+  padding: 10px 0; 
+  text-align: center; 
+  position: relative; 
+  margin-top: 30px; 
+  width: 100%; 
+}
+
+.footer p {
+  font-size: 14px;
+  margin: 0;
+}

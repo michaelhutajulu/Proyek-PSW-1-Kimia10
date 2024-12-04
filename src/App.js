@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 import Registration from './Registration';
 import Login from './Login';
 import Dashboard from './Dashboard';
@@ -12,8 +13,7 @@ import IkatanKimia from './pages/IkatanKimia';
 import ReaksiRedoks from './pages/ReaksiRedoks';
 import Kontak from './pages/Kontak';
 import Soal from './pages/Soal'; // Import untuk halaman Soal
-import IkatanKovalen from './pages/IkatanKovalen';
-import IkatanIon from './pages/IkatanIon';
+
 function App() {
   const [userData, setUserData] = useState(null); // State untuk menyimpan data user saat registrasi
 
@@ -44,12 +44,18 @@ function App() {
           <Route path="/tabel-periodik" element={<TabelPeriodik />} />
           <Route path="/stoikiometri" element={<Stoikiometri />} />
           <Route path="/ikatan-kimia" element={<IkatanKimia />} />
-          <Route path="/ikatan-kovalen" element={<IkatanKovalen />} />
-          <Route path="/ikatan-ion" element={<IkatanIon />} />
           <Route path="/reaksi-redoks" element={<ReaksiRedoks />} />
+
           <Route path="/kontak" element={<Kontak />} />
           <Route path="/soal" element={<Soal />} />
         </Routes>
+
+        {/* Footer */}
+        <footer className="footer">
+          <div className="footer-content">
+            <p>&copy; 2024 Chem10thGuide. All Rights Reserved.</p>
+          </div>
+        </footer>
       </div>
     </Router>
   );
