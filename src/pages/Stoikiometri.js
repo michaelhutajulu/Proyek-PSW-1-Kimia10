@@ -131,7 +131,7 @@ const Stoikiometri = () => {
         </section>
         {/* Section: Sifat-sfat Ikatan Kimia */}
         <section id="sifat-sifat-ikatan-kimia">
-          <h1> Jenis Stoikiometri </h1>
+          <h1> Jenis-jenis Stoikiometri </h1>
           <article className="description">
             <h1> Stoikiometri Reaksi: </h1>
             <p>
@@ -198,42 +198,7 @@ const Stoikiometri = () => {
         </main>
         </div>
         
-        {/* Card Section */}
-<div className="card-container">
-  <div className="card">
-    <img
-      src="/Stoikiometri2.jpg"
-      alt="Stoikiometri"
-      className="card-image"
-    />
-    <div className="card-content">
-      <h3>Overview of</h3>
-      <h2> Mau tes dulu? tekan tombol dibawah ini</h2>
-      <div className="card-buttons">
-        <Link to="/kuisstoikiometri.js">
-          <button className="card-button">Kuis</button>
-        </Link>
-      </div>
     </div>
-  </div>
-  <div className="card">
-    <img
-      src="/rumus3.png"
-      alt="Ikatan Ion"
-      className="card-image"
-    />
-    <div className="card-content">
-      <h3>Overview of</h3>
-      <h2>Udah Paham? gas kerjakan soal</h2>
-      <div className="card-buttons">
-        <Link to="/soal-ikatan-ion">
-          <button className="card-button">Soal</button>
-        </Link>
-      </div>
-    </div>
-  </div>
-    </div>
-  </div>
 );
 };
 

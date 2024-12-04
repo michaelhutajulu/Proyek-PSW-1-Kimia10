@@ -45,7 +45,7 @@ const TabelPeriodik = () => {
       <main className="content">
         {/* Section: Pengertian Ikatan Kimia */}
         <section id="pengertian-ikatan-kimia">
-          <h1>Pengertian Ikatan Kimia</h1>
+          <h1>Pengertian Tabel Periodik</h1>
           <div className="image-container">
             <img
               src="/tabel periodik.png"
@@ -221,39 +221,8 @@ const TabelPeriodik = () => {
         </section>
         </main>
         </div>
-        
-        {/* Card Section */}
-        <div className="card-container">
-          <div className="card">
-            <img
-              src="/tabel periodik.png"
-              alt="Tabel Periodik"
-              className="card-image"
-            />
-            <div className="card-content">
-              <h3>Overview of</h3>
-              <h2> Mau tes dulu? tekan tombol dibawah</h2>
-              <Link to="/ikatan-kovalen">
-              <button className="card-button">Kuis</button>
-              </Link>
-
-            </div>
+       
           </div>
-          <div className="card">
-            <img src="/Tabel Periodik 3.jpg" 
-            alt="Ikatan Ion" 
-            className="card-image"/>
-            <div className="card-content">
-              <h3>Overview of</h3>
-              <h2> Udah paham? gas kerjakan soal</h2>
-            <Link to="/ikatan-ion">
-            <button className="card-button">Soal</button>
-            </Link>
-            </div>
-          </div>
-    </div>
-  </div>
-  
   );
 };
 
