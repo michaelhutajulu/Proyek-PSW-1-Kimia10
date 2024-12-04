@@ -159,33 +159,9 @@ const ReaksiRedoks = () => {
         <button className="card-button1">Pelajari Sekarang</button></Link>
       </div>
       </div>
-
-      <div className="card1">
-       <img src="chemist2.jpg"
-       alt="Metode Setengah reaksi"
-       className="card-image1"/>
-      <div className="card-content1">
-        <h3>Overview of</h3>
-        <h2>Metode Setengah reaksi</h2>
-        <Link to="/metode-setengah-reaksi">
-        <button className="card-button1">Pelajari Sekarang</button></Link>
       </div>
       </div>
-      <div className="card1">
-
-      <img
-      src="chemist3.jpg"
-      alt="Penyetaraan reaksi"
-      className="card-image1"
-      />
-      <div className="card-content1">
-        <h3>Overview of</h3>
-        <h2>Penyetaraan reaksi</h2>
-        <button className="card-button1">Pelajari Sekarang</button>
-      </div>
-      </div>
-      </div>
-      </div>
+      
       
   );
 };
