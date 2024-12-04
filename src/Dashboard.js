@@ -28,7 +28,7 @@ const Dashboard = () => {
     <div className="dashboard-container">
       <header className="dashboard-header">
         <div className="logo-section">
-          <img src="/logo192.png" alt="Chem10thguide Logo" className="logo" />
+          <img src="/logokimia.png" alt="Chem10thguide Logo" className="logo" />
           <h1 className="website-name">Chem10thguide</h1>
         </div>
       </header>
@@ -95,14 +95,6 @@ const Dashboard = () => {
             </div>
             <img src="/images/artikel5.png" alt="Reaksi Redoks" className="article-image" />
           </div>
-        </div>
-
-        <div className="box question-box">
-          <h2>Tanyakan Pertanyaan Anda</h2>
-          <form>
-            <textarea placeholder="Tulis pertanyaan Anda di sini..." rows="4"></textarea>
-            <button type="submit" className="btn">Kirim</button>
-          </form>
         </div>
       </main>
     </div>
