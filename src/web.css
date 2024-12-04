@@ -191,40 +191,6 @@
   margin-left: 20px;
 }
 
-.question-box {
-  margin-top: 20px;
-}
-
-.question-box form {
-  display: flex;
-  flex-direction: column;
-}
-
-.question-box textarea {
-  width: 100%;
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  margin-bottom: 15px;
-  resize: vertical;
-  min-height: 100px;
-}
-
-.question-box button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: #4a90e2;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.question-box button:hover {
-  background-color: #357ab7;
-}
-
 @keyframes fadeInUp {
   to {
     opacity: 1;
