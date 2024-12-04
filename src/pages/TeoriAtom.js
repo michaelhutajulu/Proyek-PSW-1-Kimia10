@@ -1,117 +1,154 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import './TeoriAtom.css';
+import { Link } from 'react-router-dom';
+
 
 const TeoriAtom = () => {
+  const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="dashboard-container">
+      {/* Header */}
       <header className="dashboard-header">
         <div className="logo-section">
           <img src="/logo192.png" alt="Chem10thguide Logo" className="logo" />
           <h1 className="website-name">Chem10thguide</h1>
-        </div>
+        </div> 
       </header>
+
+      {/* Navbar */}
       <Navbar />
-    <div className="page-containerr">
-      <h2 className="section-title">Teori Atom</h2>
-      <p> Pada dasarnya, setiap material yang ada di dunia ini pasti mempunyai bagian yang paling kecil, lalu jika bagian kecil itu dibelah lagi, maka akan terdapat bagian yang lebih kecil lagi. Nah, bagian kecil dari bagian yang terkecil itulah disebut dengan atom.
-        Sebuah pengertian pasti diawali dengan katanya. Sama halnya dengan atom, kata atom itu sendiri berasal dari bahasa Yunani, atomos. Atomos berarti tidak dapat dibagi-bagi. Sementara itu, pengertian atom-atom menurut para ahli juga berbeda-beda. 
-        Berikut pengertian atom menurut para ahli:
-      </p>
-    <div className="content-section">
-      <h2>1. Teori Atom John Dalton</h2>
-      <div className="alert-box">
-        <strong>Halo, Sobat pintar!</strong> Kali ini kita akan belajar tentang <strong>Perkembangan Teori Atom</strong>. Ada <strong>Teori Atom Dalton</strong> sebagai pembuka nih, Sobat!
-      </div>
-      <p>
-      Teori atom Dalton dikembangkan oleh John Dalton pada tahun 1803 hingga 1809. Lewat teori ini, Dalton menyatakan atom adalah zat yang tidak dapat dibagi lagi menjadi zat-zat yang lebih sederhana atau lebih kecil.
-          Struktur atom adalah susunan partikel dasar dalam atom. Atom sebagai partikel penyusun materi dapat menentukan sifat materi.
-            <strong> Atom </strong> berasal dari Bahasa Yunani yaitu <i>atomos</i> yang berarti partikel terkecil yang tidak dapat dibagi lagi. 
-            Atom memang tidak dapat dilihat dengan kasat mata, namun kita dapat melihat visualisasi atom dalam 
-            <strong> perkembangan model atom </strong> berdasarkan hasil eksperimen dari para ilmuwan. Kebenaran suatu model atau teori atom 
-            tidak mutlak. Dalam perkembangannya model atau teori atom terus mengalami perbaikan dan penyempurnaan.
-      </p>
-      
-      <div className="content-section">
-      <img src="John Dalton.jpg" alt="Model Atom Dalton" className="image-section" />
-      <p>John Dalton mengemukakan tentang atom sebagai berikut:</p>
-      <ul className="list">
-        <li>Atom adalah bola pejal yang tidak bermuatan.</li>
-        <li>Atom sebagai terkecil suatu materi yang tidak dapat dibagi lagi.</li>
-        <li>Atom dari suatu unsur yang sama memiliki berat, ukuran dan bentuk yang sama, tetapi berbeda dengan atom-atom lain.</li>
-        <li>Atom tidak dapat diciptakan dan dimusnahkan.</li>
-        <li>Pada reaksi kimia terjadi penggabungan dan pemisahan atom.</li>
-        <li>Senyawa adalah hasil reaksi atom-atom penyusunnya.</li>
-      </ul>
 
-      <h4>Kelebihan</h4>
-      <ul className="list">
-        <li>Meningkatkan rasa minat terhadap penelitian model atom berikutnya.</li>
-        <li>Mampu menjelaskan Hukum Kekekalan Massa, Hukum Perbandingan Tetap, dan Hukum Perbandingan Berganda.</li>
-      </ul>
+      {/* Main Container */}
+      <div className="container">
+        {/* Sidebar */}
+        <aside className="sidebar">
+          <h2>Materi:</h2>
+          <ul>
+            <li
+              className="active"
+              onClick={() => scrollToSection('apa-itu-teori-atom')}
+            >
+              Pengertian Teori Atom
+            </li>
+            <li onClick={() => scrollToSection('apa-itu-teori-atom-dalton')}>
+              Teori Atom Dalton (1802)
+            </li>
+            <li onClick={() => scrollToSection('apa-itu-teori-atom-thomson')}>
+              Teori Atom Thomson (1904)
+            </li>
+          </ul>
+        </aside>
 
-      <h4>Kelemahan</h4>
-      <ul className="list">
-        <li>Beberapa unsur tidak tersusun dari atom melainkan molekul.</li>
-        <li>Atom-atom dari unsur yang sama dapat memiliki massa yang berbeda.</li>
-        <li>Masih ada partikel subatomik yang menyusun atom seperti proton, neutron, dan elektron.</li>
-        <li>Tidak mengenal muatan dan sifat materi listrik sehingga tidak dapat menjelaskan bagaimana cara atom dapat berikatan.</li>
-      </ul>
-        <h2>2. Teori Atom Thomson</h2>
-      </div>
-      <img src="Thomson.jpg" alt="Model Atom Thomson" className="image-section" />
-      <p> Dalam perkembangannya, Thomson memperbaiki kekurangan-kekurangan yang ada pada teori atom Dalton sebleumnya. Pada tahun 1897, Thomson menemukan partikel yang bermuatan negatif dan disebut dengan elektron.
-          Elektron merupakan penemuan yang bertujuan untuk memperbaiki kekurangan teori atom sebelumnya. Teori atom Thomson berawal dari penemuan tabung katode oleh William Crookes. Dari penelitian yang sudah 
-          dilakukan Crookes, Thomson mengembangkan penelitiannya tentang sinar katode di Laboratorium Cavendish. Teori atom Thomson bisa disebut dengan sebutan teori roti kismis. Dinamakan teori roti kismis
-          karena muatan negatifnya atau elektron (kismis) mengelilingi atom yang bermuatan positif (roti). Secara garis besar teori atom J.J Thomson dapat disimpulkan menjadi beberapa garis besar. 
-          Berikut inti dari teori atom Thomson:
-      </p>
-      <ul className="list">
-        <li>Atom bukanlah bagian terkecil dari suatu zat.</li>
-        <li>Massa elektron atom lebih kecil dari massa atom.</li>
-        <li>Atom dengan muatan positif akan tersebar secara merata ke seluruh bagian atom, kemudian atom itu dinetralkan oleh elektron-elektron yang tersebar diantara muatan positif.</li>
-      </ul>
-
-      <h4>Kelebihan</h4>
-      <ul className="list">
-        <li>Dapat menerangkan adanya partikel yang lebih kecil dari atom yang disebut partikel subatomik.</li>
-        <li>Dapat menerangkan sifat listrik atom.</li>
-      </ul>
-
-      <h4>Kelemahan</h4>
-      <ul className="list">
-        <li>Tidak dapat menerangkan fenomena penghamburan partikel alfa oleh selaput tipis emas yang dikemukakan oleh Rutherford.</li>
-        <li>Model ini belum dapat memastikan susunan muatan positif dan elektron dalam atom.</li>
-      </ul>
-      </div>
-
-      <div className="model-atom-container">
-        <h2>Perbandingan model Atom</h2>
-        <div className="model-atom-images">
-          <div className="model">
-            <img src="Dalton.jpg" alt="Model Dalton" />
-            <p>Model Dalton</p>
+        {/* Main Content */}
+        <main className="content">
+          {/* Section: Pengertian Ikatan Kimia */}
+          <section id="apa-itu-ikatan-kimia">
+            <h1>Pengertian Teori Atom</h1>
+            <div className="image-container">
+              <img
+                src="TeoriAtom.jpg"
+                alt="Model Ikatan Kimia"
+                className="content-image"
+              />
+              <p>
+                kelas 10 mempelajari bagaimana atom-atom bergabung
+                membentuk senyawa atau molekul.
+              </p>
             </div>
-          <div className="model">
-            <img src="Thomson2.jpg" alt="Model Thomson" />
-            <p>Model Thomson</p> 
-          </div>
-          <div className="model">
-            <img src="AtomRutherford.png" alt="Model Rutherford" />
-            <p>Model Rutherford</p>
-          </div>
-          <div className="model">
-            <img src="Bohr.jpg" alt="Model Bohr" />
-            <p>Model Bohr</p>
-          </div>
-          <div className="model">
-            <img src="Mekanika.png" alt="Model Mekanika Kuantum" />
-            <p>Mekanika Kuantum</p>
-          </div>
-          </div>
-          </div>
+            <article className="description">
+              <p>
+              Sejak 2500 tahun yang lalu, manusia sudah mencari tahu apa partikel 
+              terkecil yang ada di alam semesta dan bagaimana bentuknya. Dua orang filsuf pada 
+              zaman Yunani kuno, Democritus dan Leucippus, adalah orang pertama yang mengemukakan
+              ide mengenai partikel terkecil ini. Mereka menyebutkan bahwa atom adalah unit terkecil 
+              penyusun semua materi yang ada di sekitar kita. Karena atom adalah unit terkecil, atom 
+              tidak bisa dibagi atau diubah lagi.
+              </p>
+              <p>
+              Sayangnya, gagasan ini mendapat banyak kritik dari filsuf-filsuf lain. Salah satunya adalah 
+              Aristoteles. Menurut Aristoteles, segala sesuatu yang ada di dunia ini bisa dibagi, sehingga 
+              tidak mungkin ada istilah “atom” yang artinya “tidak terbagi”. Pendapat Aristoteles ini banyak 
+              didukung oleh filsuf-filsuf lainnya. Akibatnya, gagasan mengenai atom tidak pernah lagi berkembang 
+              selama berabad-abad lamanya.
+              </p>
+
+              <div className="image-container">
+              <img
+                src="Atom1.png"
+                alt="Model Ikatan Kimia"
+                className="content-image"
+              />
+              <p>Gagasan Teori Atom</p>
+              </div>
+            </article>
+          </section>
+
+
+          {/* Section: Sifat-sifat Ikatan Kimia */}
+          <section id="apa-itu-teori-atom-dalton">
+            <h1>Teori Atom Dalton (1802)</h1>
+            <article className="description">
+              <p>
+              Dalton mengemukakan empat pendapat yaitu:
+              </p>
+              <ul>
+                <li>
+                    <strong>Atom merupakan bagian terkecil dari materi yang tidak dapat dibagi lagi. Hal ini 
+                    sesuai dengan gagasan yang sebelumnya telah dikemukakan oleh Democritus dan Leucippus.</strong>
+                </li>
+                <li>
+                <strong>Dalton mengemukakan model atom pertama yang berbentuk seperti bola pejal. Dalton mengemukakan 
+                  bahwa atom berbentuk seperti bola pejal yang sangat kecil dan setiap unsur memiliki atom-atom yang 
+                  identik dan berbeda untuk membentuk unsur yang berbeda.</strong>
+                </li>
+                <li>
+                  <strong>Atom-atom bergabung membentuk senyawa dengan perbandingan 
+                    bulat dan sederhana. Seperti air yang terbentuk dari atom-atom 
+                    oksigen dan atom-atom hidrogen.</strong>
+                </li>
+                <li>
+                  <strong>Reaksi kimia merupakan pemisahan atau penggabungan atau penyusunan kembali 
+                    dari atom-atom, sehingga atom tidak dapat diciptakan atau dimusnahkan.</strong>
+                </li>
+              </ul>
+              <p>Teori yang dikemukakan oleh Dalton membangkitkan kembali minat penelitian terhadap atom. 
+                Dikarenakan atom pada saat itu tidak bisa dilihat secara langsung, para peneliti hanya dapat mengamati sifat-sifat yang ditimbulkan oleh atom.</p>
+            </article>
+          </section>
+      {/* Section: Jenis-jenis Ikatan Kimia */}
+      <section id="apa-itu-teori-atom-thomson">
+            <h1>Teori Atom Thomson (1904)</h1>
+            <article className="description">
+              <p>
+              Salah satu peneliti yang tertarik untuk meneliti tentang atom setelah John Dalton adalah Joseph JJ. Thomson, 
+              seorang fisikawan yang juga berasal dari Inggris. Thomson melakukan sebuah percobaan untuk mencari tahu muatan apa saja yang terkandung dalam atom.
+              </p>
+              <p>Thomson melakukan percobaan menggunakan tabung katode, yaitu sebuah tabung yang sebagian besar udaranya telah disedot keluar. Pada pangkal tabung 
+                ditempelkan dua lempeng logam dengan muatan yang berbeda. Lempeng tersebut kemudian dihubungkan dengan sumber tegangan tingkat tinggi. Dari sumber 
+                tersebut muncul sinar yang merambat sampai ke ujung tabung. Ketika sinar tersebut menabrak permukaan tabung, muncul cahaya yang terang.</p>
+              <p>
+              Selanjutnya, Thomson meletakkan dua lempeng berbeda muatan tadi pada masing-masing sisi tabung. Pada satu sisi, ditempelkan lempeng logam bermuatan 
+              positif, sementara pada sisi yang lain, ditempelkan lempeng logam bermuatan negatif. Kemudian Thomson melakukan percobaan yang sama. Namun kali ini, 
+              arah sinar yang muncul malah berbelok ke arah lempeng yang bermuatan positif alih-alih merambat lurus.
+              </p>
+              <p>
+              Berdasarkan percobaan tersebut Thomson berkesimpulan bahwa dalam atom terdapat sesuatu yang bermuatan negatif. Hal ini didasarkan pada sifat muatan 
+              yang berbeda akan saling tarik-menarik. Thomson kemudian menamakan partikel yang bermuatan negatif ini sebagai <strong>elektron.</strong>
+              </p>
+              <p>
+              Thomson kemudian mengajukan model atom terbaru. Thomson menyetujui pendapat Dalton bahwa atom berbentuk seperti bola pejal yang bermuatan positif, 
+              namun muatan positif ini dinetralkan oleh elektron yang menyebar rata di dalamnya. Thomson mengibaratkan model atom yang dikemukakannya seperti roti 
+              kismis dengan roti yang mengibaratkan muatan positif dan kismis yang menngibaratkan muatan negatif.
+              </p>
+            </article>
+          </section>
+          </main>
       </div>
-    </div>
+      </div>
   );
 };
 
