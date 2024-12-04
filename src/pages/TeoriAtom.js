@@ -148,6 +148,23 @@ const TeoriAtom = () => {
           </section>
           </main>
       </div>
+      
+      {/* Card Section */}
+      <div className="card-container">
+        <div className="card">
+          <img
+            src="Ikatan kovalen.png"
+            alt="Ikatan Kovalen"
+            className="card-image"
+          />
+          <div className="card-content">
+            <h2>Soal Kuis Atom</h2>
+            <Link to="/Quis-Atom">
+            <button className="card-button">KLIK</button>
+            </Link>
+            </div>
+            </div>
+      </div>
       </div>
   );
 };
