@@ -12,8 +12,6 @@ import IkatanKimia from './pages/IkatanKimia';
 import ReaksiRedoks from './pages/ReaksiRedoks';
 import Kontak from './pages/Kontak';
 import Soal from './pages/Soal'; // Import untuk halaman Soal
-import JenisStoikiometri from './pages/JenisStoikiometri';
-import TabelPeriodik2 from './pages/TabelPeriodik2';
 import IkatanKovalen from './pages/IkatanKovalen';
 import IkatanIon from './pages/IkatanIon';
 function App() {
@@ -49,8 +47,6 @@ function App() {
           <Route path="/ikatan-kovalen" element={<IkatanKovalen />} />
           <Route path="/ikatan-ion" element={<IkatanIon />} />
           <Route path="/reaksi-redoks" element={<ReaksiRedoks />} />
-          <Route path="/JenisStoikiometri" element={<JenisStoikiometri />} />
-          <Route path="/TabelPeriodik2" element={<TabelPeriodik2 />} />
           <Route path="/kontak" element={<Kontak />} />
           <Route path="/soal" element={<Soal />} />
         </Routes>

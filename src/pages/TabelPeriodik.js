@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import './Tabelperiodik.css';
+import Navbar from '../components/Navbar';
+import './TabelPeriodik.css';
 import { Link } from 'react-router-dom';
 
 const TabelPeriodik = () => {
