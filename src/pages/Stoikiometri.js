@@ -131,7 +131,7 @@ const Stoikiometri = () => {
         </section>
         {/* Section: Sifat-sfat Ikatan Kimia */}
         <section id="sifat-sifat-ikatan-kimia">
-          <h1> Jenis Stoikiometri </h1>
+          <h1> Jenis-jenis Stoikiometri </h1>
           <article className="description">
             <h1> Stoikiometri Reaksi: </h1>
             <p>
