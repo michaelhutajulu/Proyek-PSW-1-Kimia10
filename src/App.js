@@ -15,7 +15,7 @@ import ReaksiRedoks from './pages/ReaksiRedoks';
 import Kontak from './pages/Kontak';
 import Soal from './pages/Soal'; // Import untuk halaman Soal
 import IkatanKovalen from './pages/IkatanKovalen';
-import IkatanIon from './pages/IkatanIon';
+import Kuis from './pages/Kuis';
 function App() {
   const [userData, setUserData] = useState(null); // State untuk menyimpan data user saat registrasi
 
@@ -53,6 +53,7 @@ function App() {
           <Route path="/reaksi-redoks" element={<ReaksiRedoks />} />
           <Route path="/kontak" element={<Kontak />} />
           <Route path="/soal" element={<Soal />} />
+          <Route path="/kuis" element={<Kuis />} />
         </Routes>
               {/* Footer */}
               <footer className="footer">

@@ -155,7 +155,7 @@ const ReaksiRedoks = () => {
       <div className="card-content1">
         <h3>Overview of</h3>
         <h2>Bilangan Oksidasi</h2>
-        <Link to="/bilangan-oksidasi">
+        <Link to="/Kuis">
         <button className="card-button1">Pelajari Sekarang</button></Link>
       </div>
       </div>
