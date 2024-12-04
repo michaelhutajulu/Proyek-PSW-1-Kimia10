@@ -1,18 +1,3 @@
-/* src/App.css */
-.App {
-  font-family: Arial, sans-serif;
-}
-
-.container {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-h1 {
-  font-size: 2rem;
-  color: #007bff;
-}
-
 .footer {
   color: #000000; 
   padding: 10px 0; 
