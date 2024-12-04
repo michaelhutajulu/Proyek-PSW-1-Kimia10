@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+
 import Registration from './Registration';
 import Login from './Login';
 import Dashboard from './Dashboard';
@@ -29,7 +31,9 @@ function App() {
           <Route path="/" element={<Navigate to="/login" />} />
           <Route 
             path="/login" 
-            element={<Login userData={userData} />} 
+            element={<Login userData={userData} />}
+            
+
           />
           <Route 
             path="/registration" 
@@ -50,8 +54,15 @@ function App() {
           <Route path="/kontak" element={<Kontak />} />
           <Route path="/soal" element={<Soal />} />
         </Routes>
+              {/* Footer */}
+              <footer className="footer">
+          <div className="footer-content">
+            <p>&copy; 2024 Chem10thGuide. All Rights Reserved.</p>
+          </div>
+        </footer>
       </div>
     </Router>
+    
   );
 }
 

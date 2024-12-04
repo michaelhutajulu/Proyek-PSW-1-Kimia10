@@ -17,7 +17,7 @@ const Registration = ({ setUserData }) => {
   return (
     <div className="registration-page">
       <header className="page-header">
-        <img src="/logo192.png" alt="Website Logo" className="header-logo" />
+        <img src="/logokimia.png" alt="Website Logo" className="header-logo" />
         <h1 className="header-title">Chem10thguide</h1>
       </header>
 
