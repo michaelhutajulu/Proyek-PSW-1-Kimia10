@@ -18,6 +18,7 @@ import IkatanKovalen from './pages/IkatanKovalen';
 import IkatanLogam from './pages/IkatanLogam';
 import IkatanIon from './pages/IkatanIon';
 import Kuis from './pages/Kuis';
+import QuisAtom from './pages/QuisAtom';
 
 function App() {
   const [userData, setUserData] = useState(null); // State untuk menyimpan data user saat registrasi
@@ -54,6 +55,7 @@ function App() {
           <Route path="/ikatan-kovalen" element={<IkatanKovalen />} />
           <Route path="/ikatan-ion" element={<IkatanIon />} />
           <Route path="/ikatan-logam" element={<IkatanLogam />} />
+          <Route path="/quis-atom" element={<QuisAtom />} />
           <Route path="/reaksi-redoks" element={<ReaksiRedoks />} />
           <Route path="/kontak" element={<Kontak />} />
           <Route path="/soal" element={<Soal />} />

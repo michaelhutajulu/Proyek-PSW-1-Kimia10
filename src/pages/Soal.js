@@ -50,7 +50,7 @@ const Soal = () => {
     <div className="dashboard-container">
       <header className="dashboard-header">
         <div className="logo-section">
-          <img src="/logo192.png" alt="Chem10thguide Logo" className="logo" />
+          <img src="/logokimia.png" alt="Chem10thguide Logo" className="logo" />
           <h1 className="website-name">Chem10thguide</h1>
         </div>
       </header>
