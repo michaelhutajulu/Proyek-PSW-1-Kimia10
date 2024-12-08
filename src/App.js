@@ -19,6 +19,8 @@ import IkatanLogam from './pages/IkatanLogam';
 import IkatanIon from './pages/IkatanIon';
 import Kuis from './pages/Kuis';
 import QuisAtom from './pages/QuisAtom';
+import KuisTabelPeriodik from './pages/KuisTabelPeriodik';
+import KuisStoikiometri from './pages/KuisStoikiometri';
 
 function App() {
   const [userData, setUserData] = useState(null); // State untuk menyimpan data user saat registrasi
@@ -60,6 +62,8 @@ function App() {
           <Route path="/kontak" element={<Kontak />} />
           <Route path="/soal" element={<Soal />} />
           <Route path="/kuis" element={<Kuis />} />
+          <Route path="/kuis-tabel-periodik" element={<KuisTabelPeriodik />} />
+          <Route path="/kuis-stoikiometri" element={<KuisStoikiometri />} />
         </Routes>
               {/* Footer */}
               <footer className="footer">

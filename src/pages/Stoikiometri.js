@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import './Stoikiometri.css';
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 
 const Stoikiometri = () => {
   const scrollToSection = (id) => {
@@ -197,7 +197,22 @@ const Stoikiometri = () => {
         </section>
         </main>
         </div>
-        
+        {/*Card Section*/}
+     <div className="card-container1">
+      <div className="card1">
+      <img
+      src="/Stoikiometri2.jpg"
+      alt="pertambahan dan penurunan bilangan oksidasi"
+      className="card-image1"
+      />
+      <div className="card-content1">
+        <h3>Overview of</h3>
+        <h2> tes dulu ga sih? tekan tombol dibawah</h2>
+        <Link to="/Kuis-Stoikiometri">
+        <button className="card-button1">Kuis</button></Link>
+      </div>
+      </div>
+      </div>
     </div>
 );
 };

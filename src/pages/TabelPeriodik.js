@@ -221,8 +221,22 @@ const TabelPeriodik = () => {
         </section>
         </main>
         </div>
-       
-          </div>
+        <div className="card-container1">
+      <div className="card1">
+      <img
+      src="/tabel periodik.png"
+      alt="pertambahan dan penurunan bilangan oksidasi"
+      className="card-image1"
+      />
+      <div className="card-content1">
+        <h3>Overview of</h3>
+        <h2> tes dulu ga sih? tekan tombol dibawah</h2>
+        <Link to="/Kuis-Tabel-Periodik">
+        <button className="card-button1">Kuis</button></Link>
+      </div>
+      </div>
+      </div>
+      </div>
   );
 };
 
