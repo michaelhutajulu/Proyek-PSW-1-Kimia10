@@ -65,67 +65,10 @@ const Kuis = () => {
         "Menurut Arrhenius basa adalah spesi yang dapat melepaskan ion OH- dalam air.Reaksi ionisasi NaOH: NaOH (aq) → Na+(aq) + OH-(aq)",
     },
 
-    {
-      question: "i antara spesi berikut, yang tidak berlaku sebagai asam Bronsted-Lowry adalah",
-      options: [
-        "NH4",
-        "H20",
-        "HC03",
-       " CO3^2-",
-      ],
-      correctAnswer: 0,
-      explanation:
-        "Berdasarkan teori Bronsted-Lowry, asam didefinisikan sebagai pendonor 1 ion H+ pada basa dan basa didefinisikan sebagai penerima 1 ion H+ dari asam.Spesi yang tidak memiliki atom H tidak dapat berperan sebagai pendonor H+, oleh karena itu spesi yang tidak berlaku sebagai asam Bronsted-Lowrialah D. CO3^2-",
-    },
-    {
-      question: "Indikator lakmus merah jika dicelupkan pada larutan basa akan berubah menjadi warna",
-      options: [
-        "Merah",
-        "Biru",
-        "Orange",
-       " Tidak berwarna",
-      ],
-      correctAnswer: 0,
-      explanation:
-        "Kertas lakmus merah akan berubah menjadi biru jika dicelupkan larutan basa.Kertas lakmus biru akan berubah menjadi merah jika dicelupkan larutan asam.",
-    },
-    {
-      question: "Zat di bawah ini yang dapat memerahkan kertas lakmus adalah",
-      options: [
-        "NaOH",
-        "Ca(OH)2",
-        " CH3COOH",
-       "C2H50H ",
-      ],
-      correctAnswer: 0,
-      explanation:
-        "Kertas lakmus biru akan berubah menjadi merah jika dicelupkan larutan asam:NaOH : basa Ca(OH)2 : basa CH3COOH : asam CO(NH2)2 : non elektrolit C2H5OH : non elektrolit",
-        
-    },
-    {
-      question: "Salah satu tipe koloid berikut ini yang terdiri atas fase terdispersi padat dalam medium pendispersi gas yaitu",
-      options: [
-        "Gel",
-        "Emulsi padat",
-        "Sol padat",
-       " Aerosol padat",
-      ],
-      correctAnswer: 0,
-      explanation:
-        "Aerosol padat terdiri atas fase padat dalam gas, gel terdiri atas fasa cair dalam padat, sol padat terdiri atas fase padat dalam padat, buih padat terdiri atas fasa gas dalam padat, dan emulsi padat terdiri atas fasa cair dalam padat. Emulsi padat merupakan nama lain dari gel.",
-    },
-    {
-      question: "Sepuluh gram urea CO(NH2)2 dilarutkan dalam 90 mL air. Bila tekanan uap jenuh air pada suhu 25 derajat celcius adalah 62 mmHG, maka tekanan uap larutan urea tersebut adalah",
-      options: [
-        "2 mmHG",
-        "30 mmHG",
-        "31 mmHG",
-       " 60 mmHG",
-      ],
-      correctAnswer: 0,
-      explanation:
-        "n CO(NH2)2 = gr/Mr = 10 gr/60 gr/mol = 0,16 mol => n H2O = gr/Mr = 90 gr/18 gr/mol = 5 mol => Xp = np/nt+np = 5 mol/(5+0,16)mol = 0,968 P = Xp . Po =>  P = 0,968 . 62 mmHg = 60 mmHg",
-    },
+   
+    
+    
+    
   ];
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
