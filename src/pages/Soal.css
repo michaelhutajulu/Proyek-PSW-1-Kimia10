@@ -1,83 +1,95 @@
+.website-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .soal-container {
-    max-width: 80%; /* Menyisakan sedikit ruang di kiri dan kanan */
-    min-height: 70vh; /* Tinggi minimum agar tidak terlihat kecil */
-    margin: 20px auto; /* Tengahkan kotak di halaman */
-    background-color: #fff; /* Latar belakang putih */
-    border-radius: 12px; /* Sudut melengkung */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Bayangan lembut */
-    padding: 30px; /* Jarak dalam untuk konten */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .soal-title {
-    text-align: center;
-    font-size: 28px;
-    color: #4a90e2; /* Warna biru lembut */
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .question-card {
-    width: 100%; /* Agar setiap soal menyesuaikan lebar container */
-    margin-bottom: 20px; /* Jarak antar soal */
-    background-color: #f9f9f9; /* Warna latar belakang soal */
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid #e0e0e0; /* Tambahkan sedikit garis pembatas */
-  }
-  
-  .question-text {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .options {
-    margin-top: 10px;
-  }
-  
-  .option-label {
-    display: block;
-    font-size: 16px;
-    color: #555;
-    margin: 8px 0;
-    cursor: pointer;
-  }
-  
-  .submit-btn, .reset-btn {
-    background-color: #4a90e2; /* Warna biru untuk tombol */
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 20px;
-  }
-  
-  .submit-btn:hover, .reset-btn:hover {
-    background-color: #357ab8; /* Warna biru lebih gelap saat hover */
-    transform: scale(1.05);
-  }
-  
-  .result {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .result p {
-    font-size: 18px;
-    margin-top: 10px;
-  }
-  
-  .result button {
-    margin-top: 15px;
-  }
-  
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px 10%;
+  background-color: #fff;
+}
+
+.soal-title {
+  text-align: center;
+  font-size: 28px;
+  color: #4a90e2;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.question-card {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.question-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.options {
+  margin-top: 10px;
+}
+
+.option-label {
+  display: block;
+  font-size: 16px;
+  color: #555;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.submit-btn, .reset-btn {
+  background-color: #4a90e2;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.submit-btn:hover, .reset-btn:hover {
+  background-color: #357ab8;
+  transform: scale(1.05);
+}
+
+.result {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.result p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.result button {
+  margin-top: 15px;
+}
+
+.explanations {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.explanation {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e0e
+}
