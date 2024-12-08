@@ -17,18 +17,6 @@ return (
         Itulah mengapa ikatan kovalen disebut juga sebagai ikatan molekul.
         </p>
 
-        <div className="card">
-            <h2>Syarat Terjadinya Ikatan Kovalen:</h2>
-            <ul>
-                <li>Terjadi antar unsur-unsur non-logam.</li>
-                <li>Perbedaan keelektronegatifan antara unsur-unsur yang berikatan kecil.</li>
-            </ul>
-            <p>
-               Ikatan kovalen dapat dibedakan menjadi tiga kategori berdasarkan banyaknya
-               elektron yang digunakan (ikatan tunggal, rangkap 2, rangkap 3), sumber elektron (kovalen
-               murni dan kovalen koordinasi), serta distribusi muatan (polar dan non-polar).
-            </p>
-        </div>
 
         <h1 className="title1">Ikatan Kovalen Tunggal</h1>
         <p className="description">

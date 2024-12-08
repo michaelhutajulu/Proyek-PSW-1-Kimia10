@@ -58,35 +58,6 @@ body {
     text-align: justify;
 }
 
-/* Card Layout foor sections */ 
-.card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-}
-
-/* List Styles */
-.card ul {
-    list-style: disc;
-    padding-left: 40px;
-    line-height: 30px;
-}
-
-.card ul li {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 10px;
-    margin: 10px;
-}
-
-.card p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-top: 5px;
-}
-
 /*  Image Styling */
 .image-container {
     text-align: center;
