@@ -1,88 +1,114 @@
-import React, { useState } from 'react';
-import './Kontak.css';
+import React, { useState } from "react";
+import { FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
+import "./Kontak.css";
 import Navbar from '../components/Navbar';
 
-
 const Kontak = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [contactMethod, setContactMethod] = useState('email');
-  const [notification, setNotification] = useState('');
+  const [messageSent, setMessageSent] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Validasi form
-    if (!name || !email || !message) {
-      setNotification('Harap lengkapi semua kolom!');
-      return;
-    }
-
-    // Simulasi pengiriman pesan
-    setNotification('Pesan Telah Terkirim!');
-
-    // Reset form after a short delay
+  const handleSendMessage = () => {
+    setMessageSent(true);
     setTimeout(() => {
-      setName('');
-      setEmail('');
-      setMessage('');
-      setNotification('');
-    }, 3000); // Notifikasi muncul selama 3 detik
+      setMessageSent(false);
+    }, 3000); // Notifikasi menghilang setelah 3 detik
   };
 
+  const developers = [
+    {
+      name: "Michael Hutajulu",
+     
+      img: "kael.jpg",
+      instagram: "https://www.instagram.com/kael.htjl?igsh=bzVjcTJ4ODhwMGl3",
+    },
+    {
+      name: "Yohana Nababan",
+      
+      img: "yoyo.jpg",
+      instagram: "https://www.instagram.com/yohfbryx_?igsh=MzRlODBiNWFlZA==",
+    },
+    {
+      name: "Win Grace ",
+      
+      img: "winni.jpg",
+      instagram: "https://www.instagram.com/win.gra?igsh=N2JoOTduczUyb2Rm",
+    },
+    {
+      name: "Gery Nababan",
+      
+      img: "gery.jpg",
+      instagram: "https://www.instagram.com/gery_15_nb?igsh=MXRvZzMxbHA2ZXVzNA==",
+    },
+  ];
+
   return (
-<div className="dashboard-container">
+
+    <div className="dashboard-container">
       <header className="dashboard-header">
         <div className="logo-section">
           <img src="/logokimia.png" alt="Chem10thguide Logo" className="logo" />
           <h1 className="website-name">Chem10thguide</h1>
         </div>
       </header>
-      <Navbar />
 
-    <div className="contact-container">
-      <h1>Contact Us</h1>
-      <div className="contact-details">
-        <p>Website Chem10th Guide akan memecahkan persoalan kimia anda.</p>
-        <div className="contact-info">
-          
-          <p><strong>Telepon:</strong> 081 850 7766</p>
-          <p><strong>WhatsApp:</strong> +62 852 1598 9472</p>
-          <p><strong>Email:</strong> chem10thguide@gmail.com</p>
-        </div>
-      </div>
-      
-      <form onSubmit={handleSubmit} className="contact-form">
-        <input 
-          type="text" 
-          placeholder="Nama Anda" 
-          value={name} 
-          onChange={(e) => setName(e.target.value)} 
-          required 
-        />
-        <input 
-          type="email" 
-          placeholder="Email Anda" 
-          value={email} 
-          onChange={(e) => setEmail(e.target.value)} 
-          required 
-        />
-        <textarea 
-          placeholder="Pesan Anda" 
-          value={message} 
-          onChange={(e) => setMessage(e.target.value)} 
-          required 
-        />
+      {/* Navbar*/ }
+      <Navbar />
+    <div className="kontak-container">
+      <h1 className="kontak-title">Hubungi Kami</h1>
+
+      {/* Bagian Customer Care */}
+      <div className="customer-care">
+        <h2>Customer Care</h2>
+        <p>Jika ada pertanyaan atau kendala, Anda dapat menghubungi kami:</p>
         
-        <button type="submit">Send Message</button>
-      </form>
-      
-      {notification && (
-        <div className={`notification ${notification === 'Pesan Telah Terkirim!' ? '' : 'fade-out'}`}>
-          {notification}
-        </div>
-      )}
+      </div>
+
+      {/* Ikon Media Sosial */}
+      <div className="social-icons">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="icon instagram">
+          <FaInstagram />
+        </a>
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="icon youtube">
+          <FaYoutube />
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="icon twitter">
+          <FaTwitter />
+        </a>
+      </div>
+
+      {/* Formulir Aspirasi */}
+      <div className="message-container">
+        <textarea
+          className="message-box"
+          placeholder="Tulis pesan atau aspirasi Anda di sini..."
+        ></textarea>
+        <button className="send-button" onClick={handleSendMessage}>
+          Kirim
+        </button>
+      </div>
+
+      {/* Notifikasi */}
+      {messageSent && <div className="notification">Pesan Anda berhasil terkirim!</div>}
+
+      {/* Profil Developer */}
+      <div className="developer-profiles">
+        {developers.map((dev, index) => (
+          <div key={index} className="developer-card">
+            <img src={dev.img} alt={dev.name} className="developer-photo" />
+            <div className="developer-info">
+              <h3>{dev.name}</h3>
+              <p>{dev.role}</p>
+              <a
+                href={dev.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="instagram-link"
+              >
+                <FaInstagram className="instagram-icon" /> @{dev.name.toLowerCase().replace(" ", "")}
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
     </div>
   );
